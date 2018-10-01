@@ -7,13 +7,13 @@ namespace Hungabor01Betting
 {
   public class Event
   {
-    public string decsription;
-    public int id;   
+    public string Decsription;
+    public int Id;   
 
     public Event(int aId, string aDescription)
     {
-      this.id = aId;
-      this.decsription = aDescription;
+      this.Id = aId;
+      this.Decsription = aDescription;
     }
   }
 }
