@@ -12,31 +12,31 @@ namespace Hungabor01Betting
     private const int MaxEventLogEntryLength = 30000;
     private static string Source; 
 
-    public static void LogInformation(Event ev)
+    public static void LogInformation(Event ev, string extraInfo = "")
     {
       if (ev != null)
-        Log(ev, EventLogEntryType.Information);
+        Log(ev, EventLogEntryType.Information, extraInfo);
     }
 
-    public static void LogWarning(Event ev)
+    public static void LogWarning(Event ev, string extraInfo = "")
     {
       if (ev != null)
-        Log(ev, EventLogEntryType.Warning);
+        Log(ev, EventLogEntryType.Warning, extraInfo);
     }
 
-    public static void LogException(Event ev, Exception ex)
+    public static void LogException(Event ev, Exception ex, string extraInfo = "")
     {
       if (ev != null && ex != null)
       {
-        ev.decsription = ev.decsription + '\n'+  ex.ToString();
-        Log(ev, EventLogEntryType.Error);
+        ev.Decsription = ev.Decsription + '\n'+  ex.ToString();
+        Log(ev, EventLogEntryType.Error, extraInfo);
       }
     }
 
-    private static void Log(Event ev, EventLogEntryType entryType)
+    private static void Log(Event ev, EventLogEntryType entryType, string extraInfo)
     {
-      string possiblyTruncatedMessage = EnsureLogMessageLimit(ev.decsription);
-      EventLog.WriteEntry(GetSource(), possiblyTruncatedMessage, entryType, ev.id);      
+      string possiblyTruncatedMessage = EnsureLogMessageLimit(ev.Decsription + '\n' + extraInfo);
+      EventLog.WriteEntry(GetSource(), possiblyTruncatedMessage, entryType, ev.Id);      
     }
 
     private static string GetSource()
