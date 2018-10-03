@@ -2,13 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Hungabor01Betting{
     [Route("api/[controller]")]
-public class ValuesController : Controller
+    [EnableCors("SiteCorsPolicy")]
+  public class ValuesController : Controller
 {
     // GET: api/<controller>
     [HttpGet]
@@ -28,6 +30,11 @@ public class ValuesController : Controller
     [HttpPost]
     public void Post([FromBody]string value)
     {
+      if (value != "")
+      {
+        string[] query = { String.Format(Queries.InsertAuthor, value) };
+        SQLConnector.ExecuteInsert(query);
+      }
     }
 
     // PUT api/<controller>/5
