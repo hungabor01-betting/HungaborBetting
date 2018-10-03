@@ -7,7 +7,7 @@ namespace Hungabor01Betting
 {
   public class Queries
   {
-    public static readonly string InsertAuthor = "insert into Authors values({%s})";
+    public static readonly string InsertAuthor = "insert into Authors values('{0}')";
     public static readonly string SelectAuthors = "select distinct name from Authors";
   }
 }
