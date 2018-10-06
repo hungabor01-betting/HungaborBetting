@@ -3,12 +3,12 @@
       <div class="col-xl-2">
           <div class="nav-side-menu">
                 <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-                <div class="brand">Navigation</div>              
+                <div class="brand" (click)="onNavigationClick()">Navigation</div>              
                 <div class="menu-list">
                     <ul id="menu-content" class="menu-content collapse out">
 
-                        <li data-toggle="collapse" data-target="#Strategies" class="collapsed">
-                            <a href="#"><i class="fa fa-database fa-lg"></i> Strategies <span class="arrow"></span></a>
+                        <li data-toggle="collapse" data-target="#Strategies" class="collapsed"  (click)="onStrategiesClick()">
+                            <a><i class="fa fa-database fa-lg"></i> Strategies <span class="arrow"></span></a>
                         </li>
                         <ul class="sub-menu collapse" id="Strategies">
                             <li>Strategies Item 1</li>
@@ -17,8 +17,8 @@
                             <li>Strategies Item 1</li>
                         </ul>
 
-                        <li data-toggle="collapse" data-target="#PendingPicks" class="collapsed">
-                            <a href="#"><i class="fa fa-hourglass-2 fa-lg"></i> Pending Picks <span class="arrow"></span></a>
+                        <li data-toggle="collapse" data-target="#PendingPicks" class="collapsed"  (click)="onPendingPicksClick()">
+                            <a><i class="fa fa-hourglass-2 fa-lg"></i> Pending Picks <span class="arrow"></span></a>
                         </li>
                         <ul class="sub-menu collapse" id="PendingPicks">
                             <li>History Item 1</li>
@@ -27,8 +27,8 @@
                             <li>History Item 1</li>
                         </ul>
 
-                        <li data-toggle="collapse" data-target="#Tools" class="collapsed">
-                            <a href="#"><i class="fa fa-wrench fa-lg"></i> Tools <span class="arrow"></span></a>
+                        <li data-toggle="collapse" data-target="#Tools" class="collapsed"  (click)="onToolsClick()">
+                            <a><i class="fa fa-wrench fa-lg"></i> Tools <span class="arrow"></span></a>
                         </li>
                         <ul class="sub-menu collapse" id="Tools">
                             <li>New New 1</li>
@@ -37,8 +37,8 @@
                             <li>New New 1</li>
                         </ul>
 
-                        <li data-toggle="collapse" data-target="#History" class="collapsed">
-                            <a href="#"><i class="fa fa-calendar fa-lg"></i> History <span class="arrow"></span></a>
+                        <li data-toggle="collapse" data-target="#History" class="collapsed"  (click)="onHistoryClick()">
+                            <a><i class="fa fa-calendar fa-lg"></i> History <span class="arrow"></span></a>
                         </li>
                         <ul class="sub-menu collapse" id="History">
                             <li>History Item 1</li>
@@ -47,8 +47,8 @@
                             <li>History Item 1</li>
                         </ul>
 
-                        <li data-toggle="collapse" data-target="#Statistics" class="collapsed">
-                            <a href="#"><i class="fa fa-bar-chart fa-lg"></i> Statistics <span class="arrow"></span></a>
+                        <li data-toggle="collapse" data-target="#Statistics" class="collapsed" (click)="onStatisticsClick()">
+                            <a><i class="fa fa-bar-chart fa-lg"></i> Statistics <span class="arrow"></span></a>
                         </li>
                         <ul class="sub-menu collapse" id="Statistics">
                             <li>Statistics Item 1</li>
@@ -57,8 +57,8 @@
                             <li>Statistics Item 1</li>
                         </ul>
 
-                        <li data-toggle="collapse" data-target="#Wikipedia" class="collapsed">
-                            <a href="#"><i class="fa fa-university fa-lg"></i> Wikipedia <span class="arrow"></span></a>
+                        <li data-toggle="collapse" data-target="#Wikipedia" class="collapsed" (click)="onWikipediaClick()">
+                            <a><i class="fa fa-university fa-lg"></i> Wikipedia <span class="arrow"></span></a>
                         </li>
                         <ul class="sub-menu collapse" id="Wikipedia">
                             <li>Wikipedia Item 1</li>
