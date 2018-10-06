@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, RequestOptions, Headers } from '@angular/http';
+import { Router } from '@angular/router';
 
 @Component({
    selector: 'app-root',
    templateUrl: './app.component.html',
    styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-   constructor(private _http: Http) { }
-
+export class AppComponent implements OnInit {   
+  constructor(private _http: Http) { }
+  
    apiValues: string[] = [];
    ngOnInit() {
       this._http.get('/api/values').subscribe(values => {

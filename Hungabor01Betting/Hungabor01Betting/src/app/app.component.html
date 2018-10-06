@@ -2,89 +2,76 @@
   <div class="row">
       <div class="col-xl-2">
           <div class="nav-side-menu">
-            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-              <div class="brand">Navigation</div>              
-              <div class="menu-list">
-                  <ul id="menu-content" class="menu-content collapse out">
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                <div class="brand">Navigation</div>              
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
 
-                      <li data-toggle="collapse" data-target="#Strategies" class="collapsed">
-                          <a href="#"><i class="fa fa-database fa-lg"></i> Strategies <span class="arrow"></span></a>
-                      </li>
-                      <ul class="sub-menu collapse" id="Strategies">
-                          <li>Strategies Item 1</li>
-                      </ul>
-                      <ul class="sub-menu collapse" id="Strategies">
-                          <li>Strategies Item 1</li>
-                      </ul>
+                        <li data-toggle="collapse" data-target="#Strategies" class="collapsed">
+                            <a href="#"><i class="fa fa-database fa-lg"></i> Strategies <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="Strategies">
+                            <li>Strategies Item 1</li>
+                        </ul>
+                        <ul class="sub-menu collapse" id="Strategies">
+                            <li>Strategies Item 1</li>
+                        </ul>
 
-                      <li data-toggle="collapse" data-target="#PendingPicks" class="collapsed">
-                          <a href="#"><i class="fa fa-hourglass-2 fa-lg"></i> Pending Picks <span class="arrow"></span></a>
-                      </li>
-                      <ul class="sub-menu collapse" id="PendingPicks">
-                          <li>History Item 1</li>
-                      </ul>
-                      <ul class="sub-menu collapse" id="PendingPicks">
-                          <li>History Item 1</li>
-                      </ul>
+                        <li data-toggle="collapse" data-target="#PendingPicks" class="collapsed">
+                            <a href="#"><i class="fa fa-hourglass-2 fa-lg"></i> Pending Picks <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="PendingPicks">
+                            <li>History Item 1</li>
+                        </ul>
+                        <ul class="sub-menu collapse" id="PendingPicks">
+                            <li>History Item 1</li>
+                        </ul>
 
-                      <li data-toggle="collapse" data-target="#Tools" class="collapsed">
-                          <a href="#"><i class="fa fa-wrench fa-lg"></i> Tools <span class="arrow"></span></a>
-                      </li>
-                      <ul class="sub-menu collapse" id="Tools">
-                          <li>New New 1</li>
-                      </ul>
-                      <ul class="sub-menu collapse" id="Tools">
-                          <li>New New 1</li>
-                      </ul>
+                        <li data-toggle="collapse" data-target="#Tools" class="collapsed">
+                            <a href="#"><i class="fa fa-wrench fa-lg"></i> Tools <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="Tools">
+                            <li>New New 1</li>
+                        </ul>
+                        <ul class="sub-menu collapse" id="Tools">
+                            <li>New New 1</li>
+                        </ul>
 
-                      <li data-toggle="collapse" data-target="#History" class="collapsed">
-                          <a href="#"><i class="fa fa-calendar fa-lg"></i> History <span class="arrow"></span></a>
-                      </li>
-                      <ul class="sub-menu collapse" id="History">
-                          <li>History Item 1</li>
-                      </ul>
-                      <ul class="sub-menu collapse" id="History">
-                          <li>History Item 1</li>
-                      </ul>
+                        <li data-toggle="collapse" data-target="#History" class="collapsed">
+                            <a href="#"><i class="fa fa-calendar fa-lg"></i> History <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="History">
+                            <li>History Item 1</li>
+                        </ul>
+                        <ul class="sub-menu collapse" id="History">
+                            <li>History Item 1</li>
+                        </ul>
 
-                      <li data-toggle="collapse" data-target="#Statistics" class="collapsed">
-                          <a href="#"><i class="fa fa-bar-chart fa-lg"></i> Statistics <span class="arrow"></span></a>
-                      </li>
-                      <ul class="sub-menu collapse" id="Statistics">
-                          <li>Statistics Item 1</li>
-                      </ul>
-                      <ul class="sub-menu collapse" id="Statistics">
-                          <li>Statistics Item 1</li>
-                      </ul>
+                        <li data-toggle="collapse" data-target="#Statistics" class="collapsed">
+                            <a href="#"><i class="fa fa-bar-chart fa-lg"></i> Statistics <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="Statistics">
+                            <li>Statistics Item 1</li>
+                        </ul>
+                        <ul class="sub-menu collapse" id="Statistics">
+                            <li>Statistics Item 1</li>
+                        </ul>
 
-                      <li data-toggle="collapse" data-target="#Wikipedia" class="collapsed">
-                          <a href="#"><i class="fa fa-university fa-lg"></i> Wikipedia <span class="arrow"></span></a>
-                      </li>
-                      <ul class="sub-menu collapse" id="Wikipedia">
-                          <li>Wikipedia Item 1</li>
-                      </ul>
-                      <ul class="sub-menu collapse" id="Wikipedia">
-                          <li>Wikipedia Item 2</li>
-                      </ul>
-                  </ul>
-              </div>
-          </div>
+                        <li data-toggle="collapse" data-target="#Wikipedia" class="collapsed">
+                            <a href="#"><i class="fa fa-university fa-lg"></i> Wikipedia <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="Wikipedia">
+                            <li>Wikipedia Item 1</li>
+                        </ul>
+                        <ul class="sub-menu collapse" id="Wikipedia">
+                            <li>Wikipedia Item 2</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
       </div>
       <div class="col-xl-10 col-xl-offset-2">
-        <h1>Hungabor01-Betting</h1>
-        <ul>
-          <li *ngFor="let value of apiValues">{{value}}</li>
-        </ul>
-        <div class="container">
-            <h1>Submit</h1>
-            <form #form="ngForm" novalidate (submit)="doSubmit()" enctype="application/json">
-              <div class="form-group">
-                <label>Author Name</label>
-                <input type="text" class="form-control" name="author" id="author" required [(ngModel)]="name">
-              </div>  
-              <button type="submit" class="btn btn-success">Submit</button> 
-            </form>
-        </div>  
+        <router-outlet></router-outlet>
       </div>
   </div>
 </div>
